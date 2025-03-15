@@ -42,10 +42,17 @@
             margin: 20px 0;
             border-radius: 5px;
         }
+        .cat-image {
+            max-width: 50%; /* Reduced size for cat image */
+        }
         .counter {
             font-size: 1.2em;
             font-weight: bold;
             margin-top: 20px;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -54,12 +61,15 @@
         <div class="warning-icon">⚠️</div>
         <h1>Caught in the Act!</h1>
         <p>Oops! You've been caught trying to access inappropriate content.</p>
-        <p>This incident has been logged and may be reported to sir <br>Siddhant Naik - 8530058844 <br>Pratibha Naik - 8530097239</p>
+       <p class="counter">Number of attempts: <span id="attemptCount">0</span></p>
+        <p>This incident has been logged and may be reported to sir <br>
+        <span class="highlight">Siddhant Naik</span> - 8530058844 <br>
+        <span class="highlight">Pratibha Naik</span> - 8530097239</p>
         
         <img src="Caughtu.jfif" alt="Authority Services">
-        <img src="cat warning.png" alt="Authority Services">
+        <img src="cat warning.png" alt="Authority Services" class="cat-image">
         
-        <p class="counter">Number of attempts: <span id="attemptCount">0</span></p>
+       
     </div>
 
     <script>
